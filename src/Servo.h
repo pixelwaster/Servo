@@ -75,8 +75,6 @@
 #include "mbed/ServoTimers.h"
 #elif defined(__LGT8FX8P__)
 #include "avr/ServoTimers.h"
-//#elif defined(__AVR_ATmega328PB__)
-//#include "avr/ServoTimers.h"
 #else
 #error "This library only supports boards with an AVR, SAM, SAMD, NRF52 or STM32F4 processor."
 #endif
