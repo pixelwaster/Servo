@@ -52,6 +52,11 @@ typedef enum { _timer3, _timer1, _Nbr_16timers } timer16_Sequence_t;
 #define _useTimer1
 typedef enum { _timer3, _timer1, _Nbr_16timers } timer16_Sequence_t;
 
+#elif defined(__LGT8FX8P__) || (__LGT8FX8P48__)
+#define _useTimer3
+#define _useTimer1
+typedef enum { _timer3, _timer1, _Nbr_16timers } timer16_Sequence_t;
+
 #else  // everything else
 #define _useTimer1
 typedef enum { _timer1, _Nbr_16timers } timer16_Sequence_t;
